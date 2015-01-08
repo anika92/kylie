@@ -1,0 +1,830 @@
+/*
+Theme Name: previouswork
+Theme URI: http://wordpress.org/themes/
+Author: the WordPress team
+Author URI: 
+
+*/
+@import url(/t/1.css?apiType=css&projectid=725db687-9588-4e30-ab9c-137ebc26569f);
+@font-face{
+font-family:"DIN 1451 W01 Engschrift";
+src:url("/dv2/2/1fb56332-d14b-4f1e-bb8c-4b53b273e228.eot?d44f19a684109620e4841470a590e8187b635e8332337c466e728361585b98afd61e53ad32f4a75e86481a0c6ed38ce4114692b0471cf3d2c04c62053b2269da42569d4a1f486f45efa0478fe4c6fe1f2fff4e7f864d67e299266928&projectId=725db687-9588-4e30-ab9c-137ebc26569f") format("eot");
+}
+@font-face{
+font-family:"DIN 1451 W01 Engschrift";
+src:url("/dv2/2/1fb56332-d14b-4f1e-bb8c-4b53b273e228.eot?d44f19a684109620e4841470a590e8187b635e8332337c466e728361585b98afd61e53ad32f4a75e86481a0c6ed38ce4114692b0471cf3d2c04c62053b2269da42569d4a1f486f45efa0478fe4c6fe1f2fff4e7f864d67e299266928&projectId=725db687-9588-4e30-ab9c-137ebc26569f");
+src:url("/dv2/3/f5e7241f-0645-4a94-bdd1-7f4a6b06b9a3.woff?d44f19a684109620e4841470a590e8187b635e8332337c466e728361585b98afd61e53ad32f4a75e86481a0c6ed38ce4114692b0471cf3d2c04c62053b2269da42569d4a1f486f45efa0478fe4c6fe1f2fff4e7f864d67e299266928&projectId=725db687-9588-4e30-ab9c-137ebc26569f") format("woff"),url("/dv2/1/e1ec7e03-8869-492b-8c2b-31b484882fca.ttf?d44f19a684109620e4841470a590e8187b635e8332337c466e728361585b98afd61e53ad32f4a75e86481a0c6ed38ce4114692b0471cf3d2c04c62053b2269da42569d4a1f486f45efa0478fe4c6fe1f2fff4e7f864d67e299266928&projectId=725db687-9588-4e30-ab9c-137ebc26569f") format("truetype"),url("/dv2/11/2ce68cf6-afa6-4c77-916e-db420f164369.svg?d44f19a684109620e4841470a590e8187b635e8332337c466e728361585b98afd61e53ad32f4a75e86481a0c6ed38ce4114692b0471cf3d2c04c62053b2269da42569d4a1f486f45efa0478fe4c6fe1f2fff4e7f864d67e299266928&projectId=725db687-9588-4e30-ab9c-137ebc26569f#2ce68cf6-afa6-4c77-916e-db420f164369") format("svg");
+}
+/* =Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-weight:normal;
+}
+html {
+	overflow-y: scroll;
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+a:focus {
+	outline: thin dotted;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+audio,
+canvas,
+video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+}
+del {
+	color: #333;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 24px;
+	margin-bottom: 1.714285714rem;
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	top: -0.5em;
+}
+sub {
+	bottom: -0.25em;
+}
+small {
+	font-size: smaller;
+}
+img {
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+}
+
+/* Clearing floats */
+.clear:after,
+.wrapper:after,
+.format-status .entry-header:after {
+	clear: both;
+}
+.clear:before,
+.clear:after,
+.wrapper:before,
+.wrapper:after,
+.format-status .entry-header:before,
+.format-status .entry-header:after {
+	display: table;
+	content: "";
+}
+
+
+/* =Styles
+-------------------------------------------------------------- */
+
+body { font-family:Georgia, "Times New Roman", Times, serif; font-size:11px; color:#000; -webkit-font-smoothing:antialiased; -webkit-backface-visibility:hidden; -webkit-tap-highlight-color: rgba(0,0,0,0); background:#000; }
+.stop-scrolling { height:100%; overflow:hidden; }
+a { text-decoration:none; color:#000; }
+a:hover { }
+.clear { clear:both; }
+.elastic { width:100%; display:block; }
+.transition { -o-transition:.2s; -ms-transition:.2s; -moz-transition:.2s; -webkit-transition:.2s; transition:.2s; }
+.transition-null { -o-transition:none; -ms-transition:none; -moz-transition:none; -webkit-transition:none; transition:none; }
+.invis { display:none; }
+
+.wf-loading body { visibility: hidden; }
+
+.loading-screen { width:100%; height:100%; position:fixed; left:0px; top:0px; z-index:99999999; }
+
+.header { height:96px; width:100%; position:fixed; left:0px; top:0px; background:#191919; z-index:99999; }
+.fake-header { height:96px; }
+
+#mid { width:1px; height:100%; background:#0F0; position:fixed; left:50%; top:0px; z-index:999999999; display:none; }
+
+.nav { width:158px; padding:0 5px; margin:auto; height:100%; position:relative; }
+.nav1 { height:100%; position:absolute; left:-370px; width:370px; }
+.nav2 { height:100%; position:absolute; left:100%; width:400px; padding-left:10px; }
+.logo { float:left; height:100%; width:158px; background:url(<?php echo get_template_directory_uri(); ?>/../../images/kylie-logo-small.png); }
+.nav1 div, .nav2 div { float:left; padding:39px 0px 1px 0px; margin:0 15px; line-height:18px; color:#FFF; font-family:"DIN 1451 Engschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; font-size-adjust:0.479; font-size:15px; letter-spacing:1px; }
+.nav1 a div:hover, .nav2 a div:hover { border-bottom:2px solid #FFF; }
+.nav-active { border-bottom:2px solid #FFF; }
+.s-inactive { opacity:0.5; filter:alpha(opacity=50); }
+
+.socials-left { position:absolute; left:16px; top:19px; width:106px; }
+.socials-right { position:absolute; right:16px; top:19px; width:106px; }
+.social { width:53px; height:53px; float:left; position:relative; }
+.s-normal { position:absolute; top:0px; left:0px; z-index:10; width:100%; height:100%; } 
+.s-hover { position:absolute; top:0px; left:0px; z-index:11; width:100%; height:100%; opacity:0; filter:alpha(opacity=0); } 
+.s-hover:hover { opacity:1; filter:alpha(opacity=100); } 
+.s-facebook .s-normal { background:url(../../images/facebook_ICON_small.png); }
+.s-facebook .s-hover { background:url(../../images/facebook_ICON_small_hover.png); }
+.s-twitter .s-normal { background:url(../../images/twitter_ICON_small.png); }
+.s-twitter .s-hover { background:url(../../images/twitter_ICON_small_hover.png); }
+.s-tumblr .s-normal { background:url(../../images/tumblr_ICON_small.png); }
+.s-tumblr .s-hover { background:url(../../images/tumblr_ICON_small_hover.png); }
+.s-instagram .s-normal { background:url(../../images/instagram_ICON_small.png); }
+.s-instagram .s-hover { background:url(../../images/instagram_ICON_small_hover.png); }
+.s-google .s-normal { background:url(../../images/google_ICON_small.png); }
+.s-google .s-hover { background:url(../../images/google_ICON_small_hover.png); }
+
+.s-social { width:43px; height:43px; float:left; position:relative; }
+.ss-facebook .s-normal { background:url(../../images/facebook_ICON_smaller.png); }
+.ss-facebook .s-hover { background:url(../../images/facebook_ICON_smaller_hover.png); }
+.ss-twitter .s-normal { background:url(../../images/twitter_ICON_smaller.png); }
+.ss-twitter .s-hover { background:url(../../images/twitter_ICON_smaller_hover.png); }
+.ss-tumblr .s-normal { background:url(../../images/tumblr_ICON_smaller.png); }
+.ss-tumblr .s-hover { background:url(../../images/tumblr_ICON_smaller_hover.png); }
+.ss-instagram .s-normal { background:url(../../images/instagram_ICON_smaller.png); }
+.ss-instagram .s-hover { background:url(../../images/instagram_ICON_smaller_hover.png); }
+.ss-google .s-normal { background:url(../../images/google_ICON_smaller.png); }
+.ss-google .s-hover { background:url(../../images/google_ICON_smaller_hover.png); }
+
+.footer { height:81px; width:100%; position:fixed; left:0px; bottom:0px; background:#191919; z-index:99999; }
+.f-logos-left { position:absolute; left:16px; top:11px; width:135px; height:38px; }
+.f-logos-right { position:absolute; right:16px; top:11px; width:32px; height:38px; }
+.f-logo { width:32px; height:38px; float:left; opacity:0.8; filter:alpha(opacity=80); } 
+.f-logo:hover { opacity:1; filter:alpha(opacity=100); }
+.rocnation { width:103px; background:url(../../images/rocnation_small.png); }
+.parlophone { background:url(../../images/parlophone_small.png); }
+.rabbithole { background:url(../../images/rabbithole_small.png); }
+
+.footer-links { height:22px; width:100%; background:#000; position:absolute; bottom:0px; left:0px; color:#777; text-align:center; font-family:"DIN 1451 Engschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; font-size:13px; line-height:22px; }
+.footer-links a { color:#777; }
+.footer-links a:hover { text-decoration:underline; }
+
+.signup { height:30px; width:380px; margin:auto; margin-top:15px; }
+.signup-but { height:30px; width:50%; background:#FFF; float:right; color:#191919; opacity:0.9; filter:alpha(opacity=90); font-size:13px; font-family:"DIN 1451 Engschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; font-size-adjust:0.479; text-align:center; line-height:30px; letter-spacing:1px; }
+.signup-but:hover { opacity:1; filter:alpha(opacity=100); }
+.signup-input { height:30px; width:50%; float:left; border:1px solid #e7e7e7; -webkit-box-sizing: border-box; -moz-box-sizing:border-box;box-sizing:border-box; text-align:center; color:#FFF; line-height:28px; font-size:13px; font-family:"DIN 1451 Engschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; font-size-adjust:0.479; letter-spacing:1px; }
+
+.home { width:100%; height:100%; position:absolute; left:0px; top:0px; }
+.cycle-slideshow { width:100%; height:100%; }
+.slide { position:absolute; top:0px; left:0px; width:100%; height:100%; }
+.strip { width:100%; height:270px; background-color:rgba(0, 0, 0, 0.3); position:absolute; top:50%; left:0px; margin-top:-165px; text-align:center; display:table; }
+.strip a { color:#FFF; }
+.strip a:hover { text-decoration:underline; }
+.strip-text1 { font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; font-weight:normal; font-style:normal; font-size:62px; line-height:64px; color:#FFF; margin-bottom:15px; letter-spacing:2px; }
+.strip-text2 { font-style:italic; font-size:18px; color:#FFF; }
+.strip-text1-smaller { font-size:43px; line-height:45px; }
+.arrow { width:110px; height:110px; position:absolute; top:50%; margin-top:-80px; opacity:0.8; filter:alpha(opacity=80); z-index:999; }
+.arrow:hover { opacity:1; filter:alpha(opacity=100); }
+.arrow-left { background:url(../../images/arrow-left_small.png); left:0px; }
+.arrow-right { background:url(../../images/arrow-right_small.png); right:0px; }
+.strip-thumb { width:225px; height:225px; border:1px solid #FFF; position:absolute; top:-160px; left:50%; margin-left:-113px; }
+.scroll { width:142px; height:96px; background:url(../../images/scroll_small.png); position:absolute; bottom:96px; left:50%; margin-left:-71px; z-index:999; opacity:0.85; filter:alpha(opacity=85); }
+.scroll:hover { opacity:1; filter:alpha(opacity=100); }
+
+.slider-icon { width:100px; height:100px; position:absolute; bottom:-50px; left:50%; margin-left:-50px; opacity:0.85; filter:alpha(opacity=85); }
+.slider-icon:hover { opacity:1; filter:alpha(opacity=100); }
+.slider-buy .s-normal { background:url(../../images/buy_SLIDER_small.png); }
+.slider-buy .s-hover { background:url(../../images/buy_SLIDER_small_hover.png); }
+.slider-play .s-normal { background:url(../../images/play_SLIDER_small.png); }
+.slider-play .s-hover { background:url(../../images/play_SLIDER_small_hover.png); }
+.slider-go .s-normal { background:url(../../images/go_SLIDER_small.png); }
+.slider-go .s-hover { background:url(../../images/go_SLIDER_small_hover.png); }
+
+.news-bar { height:45px; background:#FFF; width:100%; position:fixed; top:0px; left:0px; z-index:999; }
+.news-filter { margin:auto; width:285px; }
+.news-filter div { color:#000; font-size:15px; font-family:"DIN 1451 Engschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; font-size-adjust:0.479; padding:15px 0px 1px 0px; margin:0 15px; float:left; line-height:15px; }
+.news-filter div:hover { border-bottom:2px solid #000; }
+.newsbar-active { border-bottom:2px solid #000; }
+.fake-news-bar { height:45px; }
+
+.news { width:100%; position:relative; background:#000; overflow-x:hidden; }
+.news-margin { padding-top:96px; }
+.news-grid { width:100%; margin-bottom:240px; box-shadow: 0px 5px 10px #000; opacity:0; }
+.thumb { float:left; overflow:hidden; position:relative; }
+.news-grid img { width:100%; display:block; }
+
+.hover { position:absolute; left:0px; top:0px; width:100%; height:100%; background:rgba(0,0,0,0.65); opacity:0; filter:alpha(opacity=0); }
+.hover:hover { opacity:1; filter:alpha(opacity=100); } 
+.news-title { font-size:36px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; width:90%; padding:5%; text-align:center; color:#FFF; }
+.news-date { color:#8f8f8f; font-size:13px; width:100%; text-align:center; font-style:italic; }
+
+.fashion-title { font-size:26px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; width:90%; padding:5%; text-align:center; color:#FFF; }
+.fashion-magnify { width:86%; padding:5%; text-align:center;height:20px;margin: 5px auto;background: url(../../images/magnify.png) center center no-repeat;background-size: 21px 21px; }
+
+
+.table { width:100%; height:100%; display:table; }
+.middle { display:table-cell; vertical-align:middle; }
+
+.next { width:100%; height:1px; }
+
+.fin { position:absolute; left:0px; bottom:132px; width:100%; text-align:center; z-index:99; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; font-size:20px; color:#FFF; display:none; opacity:0; filter:alpha(opacity=0); }
+
+.single-news { width:100%; height:100%; position:fixed; left:0px; top:0px; z-index:9999; background:rgba(0,0,0,0.85); }
+.sn-closed { left:1000%; opacity:0; filter:alpha(opacity=0); }
+.cross { width:60px; height:70px; background:url(../../images/cross_small.png); position:absolute; right:10px; top:100px; opacity:0.8; filter:alpha(opacity=80); z-index:999; }
+.cross:hover { opacity:1; filter:alpha(opacity=100); }
+.news-arrow { width:70px; height:70px; position:fixed; top:100px; opacity:0.8; filter:alpha(opacity=80); z-index:99; }
+.news-arrow:hover { opacity:1; filter:alpha(opacity=100); }
+.news-next { background:url(../../images/news-arrow-right-small.png); left:70px; }
+.news-prev { background:url(../../images/news-arrow-left-small.png); left:10px; }
+.center-col { width:900px; background:#000; position:relative; margin:0 auto; top:96px; }
+.cc-margin { margin:0px 80px;position: relative;}
+.center-col .title { font-size:44px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; width:100%; text-align:center; margin-top:50px; margin-bottom:20px; color:#FFF; }
+.center-col .date { font-size:13px; font-style:italic; padding-bottom:35px; margin-bottom:35px; width:100%; text-align:center; border-bottom:1px solid #FFF; color:#606060; }
+.center-col .content { margin-bottom:45px; }
+.center-col .socials { width:159px; margin:auto; height:53px; margin-top:20px; padding-bottom:80px; }
+.social-icon { width:24px; height:20px; margin:auto; background:url(../../images/social_ICON_small.png); }
+
+.content { color:#FFF; font-size:15px; line-height:20px; font-family:"DIN 1451 Engschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; font-size-adjust:0.479; width:100%; text-align:center; }
+.content a { text-decoration:underline; color:#FFF; }
+.content a:hover { text-decoration:none; }
+
+.title-header { height:200px; width:100%; text-align:center; background:#2d2b29; color:#FFF; }
+.title-header .title { font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; font-size:72px; letter-spacing:5px; padding:33px 0px 28px 0px; }
+.title-header .desc { font-size:18px; font-style:italic; letter-spacing:1px; }
+
+.kylie-mail { color:#FFF; position:relative; }
+.km-top { width:100%; height:25%; position:absolute; top:0px; left:0px; }
+.km-top .title { font-size:36px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; width:100%; position:absolute; bottom:2%; text-align:center; }
+.km-logo { width:100%; height:30%; position:absolute; bottom:0px; left:0px; background:url(../../images/km_logo_smaller.png) no-repeat top center; }
+.km-arrow { width:50px; height:50px; position:absolute; top:50%; margin-top:-25px; opacity:0.36; filter:alpha(opacity=36); }
+.km-arrow:hover { opacity:1; filter:alpha(opacity=1); }
+.km-prev { background:url(../../images/km_prev_small.png); left:0px; }
+.km-next { background:url(../../images/km_next_small.png); right:0px; }
+.km-tweets { position:absolute; top:25%; height:75%; width:86%; left:7%; text-align:center; font-style:italic; }
+.table { width:100%; height:100%; display:table; }
+.km-tweet { font-size:14px; line-height:24px; }
+.km-tweet a { text-decoration:none; color:#dc79fc; }
+.km-tweet a:hover { text-decoration:underline; }
+.km-posted { color:#606060; font-size:12px; margin-top:15px; margin-bottom:25px; }
+
+.instagram-block { height:100%; width:600px; background:#000; position:absolute; top:0px; opacity:0; filter:alpha(opacity=0); }
+.instagram-thumb { width:200px; height:200px; float:left; opacity:0.36; filter:alpha(opacity=36); }
+.instagram-thumb:hover { opacity:0.7; filter:alpha(opacity=70); }
+#instagram-block1 { left:50%; margin-left:-1050px; }
+#instagram-block2 { left:50%; margin-left:450px; }
+
+.overflow-x { width:100%; height:100%; overflow:hidden; position:absolute; left:0px; top:0px; background:#000; }
+.intro { font-size:17px; line-height:27px; font-style:italic; text-align:center; color:#FFF; margin-bottom:30px; margin-top:40px; }
+.read-more-text { overflow:hidden; display:none; opacity:0; filter:alpha(opacity=0); }
+.read-more { height:100px; width:100%; background:url(../../images/read-more-small.png) center no-repeat; margin-bottom:20px; opacity:0.85; filter:alpha(opacity=85); }
+.read-more:hover { opacity:1; filter:alpha(opacity=100); }
+.about-socials { width:159px; margin:auto; height:53px; padding:7px 0; }
+.socials-strip { width:100%; background:#191919; margin-bottom:35px; }
+.a-twitter { margin:auto; margin-bottom:60px; width:400px; text-align:center; color:#FFF; }
+.a-twitter .title { font-size:28px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; }
+.a-twitter .tweet { font-size:17px; line-height:27px; font-style:italic; }
+.purple-links a { text-decoration:none; color:#dc79fc; }
+.purple-links a:hover { text-decoration:underline; }
+
+.videos { width:100%; height:100%; overflow:hidden; position:absolute; left:0px; top:0px; background:url(../../images/videosBG.jpg) 50% 50% no-repeat; background-size:cover; }
+.videos .arrow { margin-top:-55px; }
+.videos-inner { width:764px; height:440px; position:absolute; left:50%; top:50%; margin-left:-382px; margin-top:-216px; }
+.box { width:170px; height:170px; position:absolute; background:#090909; overflow:hidden; opacity:0; filter:alpha(opacity=0); }
+.box-inner { width:250px; height:250px; position:absolute; opacity:1; filter:alpha(opacity=100); }
+.box-inner:hover { opacity:0.85; filter:alpha(opacity=85); }
+.box-nudge { position:absolute; top:0px; left:-21%; width:100%; height:100%; }
+.box1 { left:0px; top:0px; }
+.box6 { left:0px; bottom:0px; }
+.box4 { left:25%; top:50%; margin-left:-42px; margin-top:-85px; }
+.box2 { left:50%; top:0px; margin-left:-85px; }
+.box7 { left:50%; bottom:0px; margin-left:-85px; }
+.box5 { left:75%; top:50%; margin-left:-126px; margin-top:-85px; }
+.box3 { right:0px; top:0px; }
+.box8 { right:0px; bottom:0px; } 
+.box-darken { width:100%; height:100%; background:rgba(0,0,0,0.7); opacity:0; filter:alpha(opacity=0); position:absolute; top:0px; left:-21%; z-index:999; }
+.videos-cover { width:100%; height:100%; position:absolute; left:150%; top:0px; z-index:99; }
+
+.v-strip { height:60px; width:98%; position:absolute; left:-21%; top:50%; margin-top:-30px; background:rgba(0,0,0,0.65); z-index:99; text-align:center; padding:0; display:table; }
+.v-strip .title { font-size:16px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; color:#FFF; margin-bottom:4px; }
+.v-strip .views { color:#8f8f8f; font-style:italic; font-size:12px; }
+
+.video { width:100%; height:100%; position:fixed; left:110%; top:0px; z-index:9999; background:url(../../images/videosBG.jpg) 50% 50% no-repeat; opacity:0; filter:alpha(opacity=0); }
+.video-visible { left:0px; opacity:1; filter:alpha(opacity=100); }
+.player { background:#000; width:100%; position:absolute; left:0px; top:96px; }
+.player-controls { height:100px; width:100%; background:#000; position:absolute; bottom:77px; }
+.player-controls .title { height:50px; width:100%; text-align:center; line-height:50px; font-size:18px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; color:#FFF; }
+.player-controls .controls { width:98%; margin:0 1%; position:relative; height:70px; }
+.player-controls .controls .button { width:40px; height:40px; position:absolute; top:0px; opacity:0.85; filter:alpha(opacity=85); }
+.player-controls .controls .button:hover { opacity:1; filter:alpha(opacity=100); }
+.player-controls .controls .play { background:url(../../images/vid-play-small.png); left:0px; }
+.player-controls .controls .playing { background:url(../../images/vid-pause-small.png); }
+.player-controls .controls .scrubber { height:2px; border-bottom:19px solid #000; border-top:19px solid #000; background:#333; margin:0px 55px; position:relative; cursor:pointer; opacity:0.85; filter:alpha(opacity=85); }
+.player-controls .controls .scrubber:hover { opacity:1; filter:alpha(opacity=100); }
+.player-controls .controls .close { background:url(../../images/vid-close-small.png); right:0px; }
+.player-controls .controls .buffer { height:100%; width:0%; background:#444; position:absolute; left:0px; top:0px; }
+.player-controls .controls .played { height:100%; width:0%; background:#FFF; position:absolute; left:0px; top:0px; }
+
+.bg { width:100%; height:100%; overflow:hidden; position:fixed; left:0px; top:0px; background:url(../../images/videosBG.jpg) 50% 50% no-repeat; background-size:cover; z-index:-1; }
+
+.signup-container { width:500px; height:580px; padding:40px 0px 70px 0px; color:#FFF; text-align:center; margin:auto; }
+.signup-container .title { font-size:53px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; width:100%; margin-bottom:30px; }
+.signup-container .desc { font-style:italic; line-height:20px; font-size:16px; width:100%; margin-bottom:30px; }
+.signup-container input.textbox, .signup-container select, .facebookconnect { height:40px; width:90%; background:#000; border:1px solid #FFF; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; margin-bottom:8px; color:#FFF; font-size:18px; font-family:"DIN 1451 Engschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; font-size-adjust:0.479; text-align:center; padding:0 5%; line-height:40px; letter-spacing:1px; -webkit-appearance:none; border-radius:0; -webkit-font-smoothing:antialiased; }
+.tickbox-container { height:25px; width:100%; margin:10px 0; }
+.tickbox { width:27px; height:25px; background:url(../../images/tickbox-small.png); margin:auto; }
+.tickbox-active { background-position:0 -25px; }
+.copy { font-family:"DIN 1451 Engschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; font-size-adjust:0.479; font-size:16px; width:90%; margin:auto; }
+.or { width:100%; height:40px; line-height:40px; font-size:16px; font-style:italic; color:#FFF; text-align:center; }
+.submit { margin-top:10px; opacity:0.85; filter:alpha(opacity=85); }
+.submit:hover { opacity:1; filter:alpha(opacity=100); }
+.facebookconnect { background:#3f50a8; margin:auto; margin-bottom:8px; cursor:pointer; }
+.facebookconnect:hover { background:#4b5caf; } 
+.facebookconnect a { color:#FFF; }
+
+.galleries { width:100%; overflow-x:hidden; height:auto; }
+.gallery { background:#000; }
+.g-fade { opacity:0; filter:alpha(opacity=0); }
+.g-carousel { width:140%; position:relative; left:-20%; background:#000; }
+.g-carousel div { border-left:1px solid #000; border-right:1px solid #000; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+.half { opacity:0.4; filter:alpha(opacity=40); }  
+.full { opacity:1; filter:alpha(opacity=100); }
+.g-carousel div img { width:100%; }
+
+.g-strip { height:80px; width:100%; background:#000; }
+.g-strip-inner { width:900px; height:100%; display:table; position:relative; margin:auto; text-align:center; }
+.g-strip .title { font-size:22px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; color:#FFF; margin-bottom:10px; }
+.g-strip .count { font-style:italic; font-size:14px; color:#666; }
+.g-arrow { width:80px; height:80px; position:absolute; top:0px; opacity:0.85; filter:alpha(opacity=85); }
+.g-arrow:hover { opacity:1; filter:alpha(opacity=100); }
+.g-arrow-left { background:url(../../images/g-arrow-left-small.png); left:0px; }
+.g-arrow-right { background:url(../../images/g-arrow-right-small.png); right:0px; }
+
+.gallery-thumbs { width:1000px; margin:auto; margin-top:30px; }
+.g-thumb { width:16%; margin:12px 2%; float:left; opacity:0.8; filter:alpha(opacity=80); }
+.g-thumb:hover { opacity:1; filter:alpha(opacity=100); }
+.g-circle { overflow:hidden; background:#000; width:100%; height:100%; border-radius:50%; overflow:hidden; -webkit-background-clip:padding-box; -moz-background-clip:padding; background-clip:padding-box; border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%; }
+.g-thumb img { width:100%; display:block; }
+.g-thumb .title { margin-top:12px; text-align:center; font-size:14px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size-adjust:0.479; color:#FFF; }
+
+.fake-footer { height:130px; }
+
+.live-banner { width:100%; position:relative; }
+.live-banner img { width:100%; }
+.live-banner-strip { height:120px; line-height:110px; width:100%; background:rgba(0,0,0,0.65); position:absolute; left:0px; top:50%; margin-top:-60px; font-size:22px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; font-size:40px; color:#dc79fc; text-align:center; }
+.live-heading { margin-top:30px; width:100%; text-align:center; }
+.live-heading .title { font-size:22px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; color:#FFF; letter-spacing:1px; }
+.live-heading .full-dates { font-size:12px; font-style:italic; margin-bottom:12px; color:#FFF; }
+
+
+
+
+/* New Live Dates */
+.live-continentsWrapper { width:100%; height:45px;background-color: #ffffff;margin-bottom:30px;margin-top:-2px; }
+.live-continents { width:430px;margin:0 auto; } 
+.live-continents li { display: inline-block;text-align: center;text-transform: uppercase;font-family:"DIN 1451 Engschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; font-size-adjust:0.479; font-size:15px; letter-spacing:1px; }
+.live-continents a , .live-continents p { color: #000 ;padding: 16px 14px 14px;display:block;}
+.inactive { color: #bbb !important; }
+.continentChoice { background-color: #ffffff; color:#000000; }
+.activeContinent { background-color: #000000; color:#ffffff !important; }
+
+.live-datesrowWrapper { width:100%;height:42px; background-color: transparent; display: block; cursor: default ;opacity:0.5;}
+.live-datesrowWrapper:hover { background-color: transparent;  }
+.activeshow { opacity:1; }
+.activeshow:hover { background-color: #000000; background-color: rgba(0,0,0,0.3); }
+
+.live-datesrowInner { width:90%;max-width:990px; margin:0 auto;display: block;}
+
+.live-datesColumn { display: block;float:left;padding-top:14px;font-family:"DIN 1451 Engschrift Standard", Calibri, Helvetica, Arial, sans-serif, serif; font-size-adjust:0.479; font-size:15px; letter-spacing:1px;color: #ffffff; }
+.live-datesColumn a { color: #ffffff;}
+.live-datesColumn a:hover { color: #dc79fc;}
+.showDate { width: 16%;}
+.showVenue { width:27%;}
+.showCity { width:21%;}
+.showCountry { width:19%; }
+.showTickets { width:17%; text-align: right;}
+.showTicketsHover { color: #dc79fc !important; }
+
+.showLinks { display:inline-block;/*padding: 0 3px 0 20px;*/width:auto; }
+.VIPlive { float: right; }
+.BUYlink { float: left; }
+
+
+
+.fashion { width:100%; position:absolute; background:#000; overflow-x:hidden;  }
+.f-strip { width:100%; background:rgba(0,0,0,0.65); position:absolute; left:0px; bottom:0px; z-index:999; }
+.f-strip .title { width:90%; margin:auto; font-size:22px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; color:#FFF; letter-spacing:1px; text-align:center; margin-top:12px; }
+.f-area-left { width:40%; height:100%; position:absolute; left:0px; top:0px; }
+.f-area-right { width:40%; height:100%; position:absolute; right:0px; top:0px; }
+.f-arrow { width:80px; height:80px; position:absolute; top:50%; margin-top:-40px; opacity:0.85; filter:alpha(opacity=85); z-index:999; }
+.f-arrow:hover { opacity:1; filter:alpha(opacity=100); }
+.f-arrow-left { background:url(../../images/g-arrow-left-small.png); left:0px; }
+.f-arrow-right { background:url(../../images/g-arrow-right-small.png); right:0px; }
+.f-socials { width:134px; margin:auto; height:53px; margin-top:12px; margin-bottom:2px; }
+.f-fade { opacity:0; filter:alpha(opacity=0); width:100%; height:100%; background:url(../../images/blank2.png); position:absolute; left:0px; top:0px; z-index:999; }
+.f-fade:hover { opacity:1; filter:alpha(opacity=100); }
+ 
+.f-slideshow { position:relative; /*left:0px; top:0px; width:100%; height:100%;*/ }
+
+.fashionimage, .newsImage { opacity:1; }
+
+#single-fashion { width:900px;left:50% !important;margin-left:-450px;margin-bottom: 0px; height:100%;}
+.single-fashion { position: relative;height:100%; }
+
+.s-fashion { position:absolute; top:0px; z-index:9999; background:#000; display:none; opacity:0; filter:alpha(opacity=0); }
+.s-left { left:0px; }
+.s-right { right:0px; }
+.s-middle { left:20%; }
+.blanket { width:100%; height:100%; position:fixed; left:100%; top:0px; z-index:9; background:rgba(0,0,0,0.75); opacity:0; filter:alpha(opacity=0); }
+#close-fashion { display:none;z-index:700; }
+.f-cross { width:50px; height:50px; background:url(../../images/cross-smaller.png); position:absolute; right:14px; top:12px; opacity:0.8; filter:alpha(opacity=80); z-index:1000; }
+.f-cross:hover { opacity:1; filter:alpha(opacity=100); }
+
+
+.rotate {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+.rotateBack { 
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+} 
+
+.music { width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden; }
+.wheel { width:1600px; height:1600px; position:absolute; left:-900px; top:50%; margin-top:-800px; z-index:99;
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	-ms-transform-origin: 50% 50%;
+	-o-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.spindle { height:260px; width:770px; padding-left:330px; position:absolute; left:50%; top:50%; margin-top:-130px; opacity:0.4; filter:alpha(opacity=40); }
+.spindle .image { width:220px; height:100%; float:left; }
+.spindle .text { height:100%; width:470px; float:left; margin-left:40px; position:relative; }
+.spindle .text .date { font-style:italic; color:#999; font-size:14px; margin-bottom:3px; }
+.spindle .text .title { font-size:52px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; color:#FFF; margin-bottom:14px; letter-spacing:2px; }
+.spindle .text .title-big { font-size:52px; }
+.spindle .text .desc { font-style:italic; color:#FFF; font-size:14px; }
+.spindle .text .socials { width:159px; position:absolute; right:0px; height:53px; bottom:0px; }
+.spindle .text .social-icon { width:24px; height:20px; position:absolute; right:170px; bottom:16px; background:url(../../images/social_ICON_small.png); }
+.lightup {opacity:1; filter:alpha(opacity=100); }
+
+#position { position:absolute; right:20px; bottom:130px; z-index:999; color:#FFF; display:none; }
+
+.rotate-origin { -webkit-transform-origin:0 130px; -moz-transform-origin:0 130px; -ms-transform-origin:0 130px; -o-transform-origin:0 130px; transform-origin:0 130px; }
+.rotate-1 { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+.rotate-2 { -webkit-transform:rotate(30deg); -moz-transform:rotate(30deg); -ms-transform:rotate(30deg); -o-transform:rotate(30deg); transform:rotate(30deg); }
+.rotate-3 { -webkit-transform:rotate(60deg); -moz-transform:rotate(60deg); -ms-transform:rotate(60deg); -o-transform:rotate(60deg); transform:rotate(60deg); }
+.rotate-4 { -webkit-transform:rotate(90deg); -moz-transform:rotate(90deg); -ms-transform:rotate(90deg); -o-transform:rotate(90deg); transform:rotate(90deg); }
+.rotate-5 { -webkit-transform:rotate(120deg); -moz-transform:rotate(120deg); -ms-transform:rotate(120deg); -o-transform:rotate(120deg); transform:rotate(120deg); }
+.rotate-6 { -webkit-transform:rotate(150deg); -moz-transform:rotate(150deg); -ms-transform:rotate(150deg); -o-transform:rotate(150deg); transform:rotate(150deg); }
+.rotate-7 { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+.rotate-8 { -webkit-transform:rotate(210deg); -moz-transform:rotate(210deg); -ms-transform:rotate(210deg); -o-transform:rotate(210deg); transform:rotate(210deg); }
+.rotate-9 { -webkit-transform:rotate(240deg); -moz-transform:rotate(240deg); -ms-transform:rotate(240deg); -o-transform:rotate(240deg); transform:rotate(240deg); }
+.rotate-10 { -webkit-transform:rotate(270deg); -moz-transform:rotate(270deg); -ms-transform:rotate(270deg); -o-transform:rotate(270deg); transform:rotate(270deg); }
+.rotate-11 { -webkit-transform:rotate(300deg); -moz-transform:rotate(300deg); -ms-transform:rotate(300deg); -o-transform:rotate(300deg); transform:rotate(300deg); }
+.rotate-12 { -webkit-transform:rotate(330deg); -moz-transform:rotate(330deg); -ms-transform:rotate(330deg); -o-transform:rotate(330deg); transform:rotate(330deg); }
+.rotate-13 { -webkit-transform:rotate(359deg); -moz-transform:rotate(359deg); -ms-transform:rotate(359deg); -o-transform:rotate(359deg); transform:rotate(359deg); }
+
+.music-arrows { width:60px; height:240px; position:absolute; left:75px; top:50%; margin-top:-120px; z-index:999; font-size:18px; text-align:center; color:#FFF; line-height:28px; font-style:italic; }
+.m-arrow { width:60px; height:60px; position:absolute; left:0px; opacity:0.8; filter:alpha(opacity=80); }
+.m-arrow:hover { opacity:1; filter:alpha(opacity=100); }
+.m-arrow-up { background-image:url(../../images/arrow-up-small.png); top:0px; }
+.m-arrow-down { background-image:url(../../images/arrow-down-small.png); bottom:0px; }
+
+.music-buy { width:100px; height:100px; position:absolute; right:20px; bottom:101px; z-index:999; }
+.music-buy .s-normal { background:url(../../images/music-buy-smaller.png); }
+.music-buy .s-hover { background:url(../../images/music-buy-smaller-hover.png); }
+
+.spotify-playlist { position:absolute; right:0px; top:96px; width:300px; background:#000; height:80px; z-index:999; }
+.spotify-player { position:absolute; left:0px; top:0px; width:100%; height:100%; z-index:1001; }
+
+
+
+
+@media all and (max-width: 1180px) {
+
+	.news-title { font-size: 30px; }
+
+	.nav1 { left:-300px; width:300px; }
+	.nav2 { width:320px; }
+	.nav1 div, .nav2 div { margin:0 8px; }
+	
+	.socials-left { position:absolute; left:6px; top:19px; width:106px; }
+	.socials-right { position:absolute; right:6px; top:19px; width:106px; }
+	.social { width:53px; height:53px; float:left; position:relative; }
+}
+
+@media all and (min-width: 1300px) {
+	.strip-text1 { font-size:72px; line-height:74px; margin-bottom:20px; }
+	.strip-text1-smaller { font-size:50px; line-height:52px; }
+	
+	.km-tweet { font-size:17px; line-height:28px; }
+	.km-posted { margin-top:20px; font-size:13px; }
+	.km-logo { background:url(../../images/km_logo_small.png) no-repeat top center; }
+}
+
+@media all and (min-width: 1365px) {
+	.videos-inner { width:900px; margin-left:-450px; }
+	
+	.spindle { width:835px; }
+	.spindle .text {width:535px; }
+}
+
+@media all and (min-width: 1460px) {
+	.videos-inner { width:1000px; height:600px; margin-left:-500px; margin-top:-295px; }
+	.box { width:230px; height:230px; }
+	.box-inner { width:335px; height:335px; }
+	.box4 { margin-left:-58px; margin-top:-115px; }
+	.box2 { margin-left:-115px; }
+	.box7 { margin-left:-115px; }
+	.box5 { margin-left:-173px; margin-top:-115px; }
+
+	.v-strip { height:100px; margin-top:-50px; }
+	.v-strip .title { font-size:22px; margin-bottom:8px; }
+	.v-strip .views { font-size:13px; }
+	
+	.spindle { width:930px; }
+	.spindle .text {width:630px; }
+}
+
+@media all and (min-width: 1580px) {
+	.spindle { width:1050px; }
+	.spindle .text {width:750px; }
+	.spindle .text .title { font-size:57px; margin-bottom:16px; letter-spacing:3px; }
+}
+
+@media all and (min-width: 1680px) {
+	.spindle { width:1150px; }
+	.spindle .text {width:850px; }
+	.spindle .text .title { font-size:62px; margin-bottom:18px; }
+}
+
+@media all and (min-width: 1780px) {
+	.spindle { width:1250px; }
+	.spindle .text {width:950px; }
+}
+
+@media all and (min-width: 1880px) {
+	.spindle { width:1350px; }
+	.spindle .text {width:1050px; }
+}
+
+@media all and (max-width: 1080px) {
+	.news-title { font-size: 28px; }
+}
+
+@media all and (max-width: 900px) {
+	.news-title { font-size: 21px; }
+}
+
+@media all and (max-width: 800px) {
+	.news-title { font-size: 16px; }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+		 
+	.logo { background:url(../../images/kylie-logo.png); background-size:100%; }
+	
+	.s-facebook .s-normal { background:url(../../images/facebook_ICON.png); background-size:100%; }
+	.s-facebook .s-hover { background:url(../../images/facebook_ICON_hover.png); background-size:100%; }
+	.s-twitter .s-normal { background:url(../../images/twitter_ICON.png); background-size:100%; }
+	.s-twitter .s-hover { background:url(../../images/twitter_ICON_hover.png); background-size:100%; }
+	.s-tumblr .s-normal { background:url(../../images/tumblr_ICON.png); background-size:100%; }
+	.s-tumblr .s-hover { background:url(../../images/tumblr_ICON_hover.png); background-size:100%; }
+	.s-instagram .s-normal { background:url(../../images/instagram_ICON.png); background-size:100%; }
+	.s-instagram .s-hover { background:url(../../images/instagram_ICON_hover.png); background-size:100%; }
+	.s-google .s-normal { background:url(../../images/google_ICON.png); background-size:100%; }
+	.s-google .s-hover { background:url(../../images/google_ICON_hover.png); background-size:100%; }
+	
+	.cross { background:url(../../images/cross.png); background-size:100%; }
+	.news-next { background:url(../../images/news-arrow-right.png); background-size:100%; }
+	.news-prev { background:url(../../images/news-arrow-left.png); background-size:100%; }
+	
+	.social-icon { background:url(../../images/social_ICON_small.png); background-size:100%; }
+	
+	.arrow-left { background:url(../../images/arrow-left.png); background-position:100%; }
+	.arrow-right { background:url(../../images/arrow-right.png); background-position:100%; }
+	
+	.slider-buy { background:url(../../images/buy_SLIDER.png); background-size:100%; }
+	.slider-play { background:url(../../images/play_SLIDER.png); background-size:100%; }
+	.slider-go { background:url(../../images/go_SLIDER.png); background-size:100%; }
+	
+	.km-prev { background:url(../../images/km_prev.png); background-size:100%; }
+	.km-next { background:url(../../images/km_next.png); background-size:100%; }
+	
+	.scroll { background:url(../../images/scroll.png); background-size:100%; }
+	
+	.km-logo { background:url(../../images/km_logo.png) no-repeat top center; background-size:200px 134px; }
+	
+	.read-more { background:url(../../images/read-more.png) center no-repeat; background-size:100px 100px; }
+	
+	.player-controls .controls .play { background:url(../../images/vid-play.png); background-size:100%; }
+	.player-controls .controls .playing { background:url(../../images/vid-pause.png); background-size:100%; }
+	.player-controls .controls .close { background:url(../../images/vid-close.png); background-size:100%; }
+	
+	.music-buy { background:url(../../images/music-buy.png); background-size:100%; }
+	.arrow-up { background:url(../../images/arrow-up.png); background-size:100%; }
+	.arrow-down { background:url(../../images/arrow-down.png); background-size:100%; }
+
+	.fashion-magnify {background: url(../../images/magnify2X.png) center center no-repeat;background-size: 21px 21px; }
+}
+
+
+
+/* SPINNER */
+
+.spinner {
+height:60px;
+width:60px;
+margin:0px auto;
+position:relative;
+-webkit-animation: rotation .6s infinite linear;
+-moz-animation: rotation .6s infinite linear;
+-o-animation: rotation .6s infinite linear;
+animation: rotation .6s infinite linear;
+border-left:6px solid rgba(255,255,255,.15);
+border-right:6px solid rgba(255,255,255,.15);
+border-bottom:6px solid rgba(255,255,255,.15);
+border-top:6px solid rgba(255,255,255,.8);
+border-radius:100%;
+pointer-events:none;
+}
+
+.spinner1 { position:absolute; left:50%; margin-left:-30px; top:50%; margin-top:-30px; z-index:99; }
+.spinner2 { position:absolute; left:50%; margin-left:-30px; top:50%; margin-top:-30px; z-index:99; opacity:0; filter:alpha(opacity=0); }
+#infscr-loading { position:absolute; left:50%; bottom:-95px; margin-left:-36px; z-index:99;  }
+.middle-spinner { position:fixed; left:50%; top:50%; margin-left:-34px; margin-top:-33px; z-index:99999; opacity:0; filter:alpha(opacity=0); }
+.g-spinner { position:absolute; left:50%; top:-20%; margin-left:-36px; margin-top:-36px; z-index:99;  }
+.spotify-spinner { width:40px; height:40px; position:absolute; left:50%; top:50%; margin-top:-26px; margin-left:-26px; opacity:0.3; filter:alpha(opacity=30); z-index:1000; }
+
+@-webkit-keyframes rotation {
+from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(359deg);}
+}
+
+@-moz-keyframes rotation {
+from {-moz-transform: rotate(0deg);}
+to {-moz-transform: rotate(359deg);}
+}
+
+@-o-keyframes rotation {
+from {-o-transform: rotate(0deg);}
+to {-o-transform: rotate(359deg);}
+}
+
+@keyframes rotation {
+from {transform: rotate(0deg);}
+to {transform: rotate(359deg);}
+}
+
+
+
+/* basic scrollbar styling */
+/* vertical scrollbar */
+.mCSB_container { width:auto; margin-right:12px; overflow:hidden; }
+.mCSB_container.mCS_no_scrollbar { margin-right:0; }
+.mCS_disabled>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar,
+.mCS_destroyed>.mCustomScrollBox>.mCSB_container.mCS_no_scrollbar { margin-right:15px; }
+
+.mCustomScrollBox>.mCSB_scrollTools { width:15px; height:100%; top:0; right:0; }
+.mCSB_scrollTools .mCSB_draggerContainer { position:absolute; top:0; left:0; bottom:0; right:0; height:auto; }
+
+.mCSB_scrollTools .mCSB_draggerRail { }
+.mCSB_scrollTools .mCSB_dragger { cursor:pointer; width:100%; height:30px; }
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { width:5px; height:100%; margin-left:10px; text-align:center; }
+
+.mCustomScrollBox { -ms-touch-action:none; /*MSPointer events - direct all pointer events to js*/ }
+
+/* default scrollbar colors and backgrounds (default theme) */
+.mCustomScrollBox>.mCSB_scrollTools { }
+.mCustomScrollBox:hover>.mCSB_scrollTools { }
+.mCSB_scrollTools .mCSB_draggerRail { }
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background:#000; }
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar { }
+
+
+/*scrollbar themes*/
+
+/*light-2*/
+.mCS-light-2>.mCSB_container { width:auto; margin-right:0; overflow:hidden; }
+.mCS-light-2>.mCSB_scrollTools .mCSB_draggerRail { }
+.mCS-light-2>.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar { background:#FFF; margin-left:2px; }
+.mCS-light-2>.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar { }
+body { letter-spacing:1px; background:#212121; }
+
+.spinner {
+	border-left:6px solid rgb(200,200,200);
+	border-right:6px solid rgb(255,255,255);
+	border-bottom:6px solid rgb(255,255,255);
+	border-top:6px solid rgb(255,255,255);
+}
+
+.strip { background:url(../../images/cover30.png); }
+.hover { background:url(../../images/cover65.png); }
+.single-news { background:url(../../images/cover85.png); }
+.box-darken { background:url(../../images/cover65.png); }
+.v-strip { background:url(../../images/cover65.png); }
+
+.videos-inner { width:860px; height:420px; position:absolute; left:50%; top:50%; margin-left:-430px; margin-top:-204px; }
+.box { width:200px; height:200px; }
+.box-inner { width:200px; height:200px; }
+.box-nudge { left:0px; }
+.v-strip { left:0px; width:100%; }
+
+.box1 { left:0px; top:0px; bottom:auto; }
+.box2 { left:220px; top:0px; bottom:auto; margin-left:0px; }
+.box3 { left:440px; top:0px; bottom:auto; }
+.box4 { right:0px; left:auto; top:0px; bottom:auto; margin-left:0px; margin-top:0px; }
+.box5 { left:0px; bottom:0px; top:auto; margin-left:0px; margin-top:0px; }
+.box6 { left:220px; bottom:0px; top:auto; }
+.box7 { left:440px; bottom:0px; top:auto; margin-left:0px; }
+.box8 { right:0px; bottom:0px; top:auto; } 
+
+.content { font-size:16px; }
+
+.releases { width:930px; margin:auto; margin-top:40px; margin-bottom:120px; position:relative; left:15px; }
+.release { width:280px; margin-right:30px; float:left; }
+.r-text { margin-top:20px; text-align:center; margin-bottom:15px; }
+.r-text .title { font-size:32px; font-family:"Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Didot, Georgia, serif; color:#FFF; margin-bottom:14px; letter-spacing:1px; }
+.r-text .released { font-style:italic; color:#999; font-size:14px; }
+
+.ie-buy { width:100px; height:100px; margin:auto; background:url(../../images/music-buy-smaller.png); margin-bottom:20px; filter:alpha(opacity=80); }
+.ie-buy:hover { filter:alpha(opacity=100); }
+
+
+
